@@ -1,4 +1,5 @@
 import '../styles/App.scss';
+import Api from '../services/api';
 
 function App() {
   return (
