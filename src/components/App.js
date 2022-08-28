@@ -1,6 +1,7 @@
 import '../styles/App.scss';
 import api from '../services/api';
 import defaultPhoto from '../images/default-photo.png';
+import titlePhoto from '../images/Harry-film-logo.png'
 import '../styles/App.scss';
 import { useState, useEffect } from 'react';
 import Filters from './Filters';
@@ -62,7 +63,7 @@ const renderGryffindorList = () => {
 
   return (
     <div className="App">
-      <h1>Harry Potter</h1>
+      <img src={titlePhoto} alt='harry-potter-title'></img>
       <div className='divSearch'>
         <Filters
         handleFilterByName={handleFilterByName} 
@@ -72,7 +73,7 @@ const renderGryffindorList = () => {
         />
       </div>
       <div className='characterWrapper'>
-        <ul>{renderGryffindorList()}</ul>
+        <ul className='listWrapper'>{renderGryffindorList()}</ul>
       </div>
       
     </div>
