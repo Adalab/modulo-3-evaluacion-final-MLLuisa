@@ -1,7 +1,17 @@
+import FilterByHouse from './FilterByHouse';
 import FilterByName from './FilterByName';
 
 const Filters = (props) => {
-    return (<FilterByName handleFilterByName={props.handleFilterByName} filterName={props.filterName}/>)
+    return (<>
+    <FilterByName
+    filterName={props.filterName}
+    handleFilterByName={props.handleFilterByName}
+    />
+    <FilterByHouse
+    filterHouse={props.filterHouse}
+    handleFilterByHouse={props.handleFilterByHouse}
+    />
+    </>)
 }
 
 export default Filters;

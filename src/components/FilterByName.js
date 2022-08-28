@@ -1,6 +1,7 @@
 const FilterByName = (props) => {
 
 const handleFilterByName = (ev) => {
+    ev.preventDefault();
     props.handleFilterByName(ev.target.value.toLowerCase());
 }
 
