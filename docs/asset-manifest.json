@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "./static/css/main.b2377fcc.css",
-    "main.js": "./static/js/main.033ecab4.js",
+    "main.css": "./static/css/main.4371d8cf.css",
+    "main.js": "./static/js/main.75561851.js",
     "static/media/esplaceholder.png": "./static/media/esplaceholder.0ed3008e104e06d9e53d.png",
     "static/media/Harry-film-logo.png": "./static/media/Harry-film-logo.d66978e3692980b1cd5d.png",
     "index.html": "./index.html",
-    "main.b2377fcc.css.map": "./static/css/main.b2377fcc.css.map",
-    "main.033ecab4.js.map": "./static/js/main.033ecab4.js.map"
+    "main.4371d8cf.css.map": "./static/css/main.4371d8cf.css.map",
+    "main.75561851.js.map": "./static/js/main.75561851.js.map"
   },
   "entrypoints": [
-    "static/css/main.b2377fcc.css",
-    "static/js/main.033ecab4.js"
+    "static/css/main.4371d8cf.css",
+    "static/js/main.75561851.js"
   ]
 }
