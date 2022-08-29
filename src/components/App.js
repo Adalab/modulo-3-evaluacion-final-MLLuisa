@@ -1,10 +1,10 @@
 import '../styles/App.scss';
 import api from '../services/api';
-import defaultPhoto from '../images/default-photo.png';
-import titlePhoto from '../images/Harry-film-logo.png'
+import titlePhoto from '../images/Harry-film-logo.png';
 import '../styles/App.scss';
 import { useState, useEffect } from 'react';
 import Filters from './Filters';
+import CharacterList from './CharacterList';
 
 function App() {
 
@@ -27,40 +27,6 @@ const handleFilterByHouse = (value) => {
   setFilterHouse(value);
 }
 
-const renderGryffindorList = () => {
-  if(dataApi.image === '') {
-    dataApi.image = defaultPhoto;
-  }
-  return dataApi
-  .filter((element) => {
-    if (filterName !== ''){
-        return (element.name.toLowerCase().includes(filterName.toLocaleLowerCase()));
-    } return true;
-    
-})
-  .filter((element) => {
-    if(filterHouse === 'Gryffindor') {
-      return filterHouse.includes(element.house);
-    } else {
-      return filterHouse.includes(element.house);
-    }
-  })
-  .map((element, index) => {
-      return (
-      <li key={index} 
-      className='characterList'>
-      <img 
-            src={element.image}
-            alt={`foto de ${element.name}`}
-            title={`foto de ${element.name}`}
-            className="charactersPhoto"></img>
-      <p>{element.name}</p>
-      <span>{element.species}</span>
-      <p>{element.house}</p>
-    </li>)
-  })
-}
-
   return (
     <div className="App">
       <img src={titlePhoto} alt='harry-potter-title'></img>
@@ -73,7 +39,10 @@ const renderGryffindorList = () => {
         />
       </div>
       <div className='characterWrapper'>
-        <ul className='listWrapper'>{renderGryffindorList()}</ul>
+        <ul className='listWrapper'><CharacterList 
+        dataApi={dataApi}
+        filterName={filterName}
+        filterHouse={filterHouse}/></ul>
       </div>
       
     </div>
