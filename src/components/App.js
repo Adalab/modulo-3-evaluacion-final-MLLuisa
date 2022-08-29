@@ -5,6 +5,7 @@ import '../styles/App.scss';
 import { useState, useEffect } from 'react';
 import Filters from './Filters';
 import CharacterList from './CharacterList';
+import CharacterCard from './CharacterCard';
 
 function App() {
 
@@ -39,10 +40,14 @@ const handleFilterByHouse = (value) => {
         />
       </div>
       <div className='characterWrapper'>
-        <ul className='listWrapper'><CharacterList 
+        <ul className='listWrapper'>
+        <CharacterList 
         dataApi={dataApi}
         filterName={filterName}
-        filterHouse={filterHouse}/></ul>
+        filterHouse={filterHouse}
+        CharacterCard={CharacterCard}
+        />
+        </ul>
       </div>
       
     </div>

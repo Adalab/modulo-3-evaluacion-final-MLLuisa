@@ -1,7 +1,8 @@
 import defaultPhoto from '../images/esplaceholder.png';
 import '../styles/App.scss';
+import CharacterCard from './CharacterCard';
 
-const CharacterList = (props) => {
+const CharacterList = (props, index) => {
 
         if(props.dataApi.image === "") {
           return {defaultPhoto};
@@ -21,18 +22,7 @@ const CharacterList = (props) => {
           }
         })
         .map((element, index) => {
-            return (
-            <li key={index} 
-            className='characterList'>
-            <img 
-                  src={element.image || defaultPhoto}
-                  alt={`foto de ${element.name}`}
-                  title={`foto de ${element.name}`}
-                  className="charactersPhoto"></img>
-            <p>{element.name}</p>
-            <span>{element.species}</span>
-            <p>{element.house}</p>
-          </li>)
+            return (<CharacterCard element={element} key={index} />)
         })
       }
 
