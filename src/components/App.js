@@ -7,16 +7,18 @@ import {Route, Routes, matchPath, useLocation} from 'react-router-dom';
 import Filters from './Filters';
 import CharacterList from './CharacterList';
 import CharacterDetail from './CharacterDetail';
+import ls from '../services/localStorage';
 
 function App() {
 
-const [dataApi, setDataApi] = useState([]);
+const [dataApi, setDataApi] = useState(ls.get('dataApi', []));
 const [filterName, setFilterName] = useState("");
 const [filterHouse, setFilterHouse] = useState("Gryffindor");
 
 useEffect(() => {
   api().then((dataFromApi) => {
-    setDataApi(dataFromApi)
+    ls.set("dataApi", dataFromApi);
+    setDataApi(dataFromApi);
     console.log(dataFromApi);
   });
 }, []);
@@ -44,7 +46,7 @@ const {pathname} = useLocation();
             <img src={titlePhoto} alt='harry-potter-title'
             className='headerImage'>
             </img>
-            <p className='phraseHermione'>It's leviOsa, not levioSA!</p>
+            <p className='phraseHermione'>"It's leviOsa, not levioSA!"</p>
           </figure>
           
           

@@ -15,7 +15,7 @@ const CharacterDetail = (props, index) => {
     <p>Name: {props.element.name}</p>
     <span>Species: {props.element.species}</span>
     <p>House: {props.element.house}</p>
-    <p>Status: {props.element.status}</p>
+    <p>Status:  {props.element.status} - <i className="fa-solid fa-heart-pulse"></i></p>
     <p>Gender: {props.element.gender}</p>
     </li>
     </div>
