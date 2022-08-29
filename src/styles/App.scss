@@ -40,8 +40,9 @@ body {
     list-style: none;
     text-decoration: none;
     text-align: center;
-    color: black;
+    color: white;
     font-size: 20px;
+    font-weight: bold;
 }
 
 .wrapperDetail {
@@ -56,11 +57,16 @@ body {
 
 .divSearch{
     margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .labelName, .labelHouse {
-    font-size: 20px;
+    font-size: 26px;
     font-weight: bold;
+    color: white;
 }
 
 .selectHome, .inputName {
@@ -72,15 +78,26 @@ body {
     background-color: grey;
 }
 
+.formName, .formHouse {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 ::placeholder {
     color: black;
-    opacity: 0.4;
+    opacity: 0.6;
+    color: white;
+    font-weight: bold;
 }
 
 .selectHome {
     margin-top: 5px;
     height: 32px;
     width: 292px;
+    color: white;
+    font-weight: bold;
 }
 
 .listWrapper {

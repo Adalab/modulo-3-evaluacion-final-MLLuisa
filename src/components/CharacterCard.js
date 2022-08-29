@@ -1,5 +1,6 @@
 import defaultPhoto from '../images/esplaceholder.png';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const CharacterCard = (props, index) => {
     return (<div className='wrapperCard'>
@@ -18,6 +19,14 @@ const CharacterCard = (props, index) => {
         </li>
         </Link>
         </div>)
+}
+
+CharacterCard.defaultProps = {
+    element: {}
+  };
+
+CharacterCard.propTypes = {
+    element: PropTypes.object.isRequired,
 }
 
 export default CharacterCard;

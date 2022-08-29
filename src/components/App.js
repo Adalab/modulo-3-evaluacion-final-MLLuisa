@@ -15,6 +15,7 @@ const [dataApi, setDataApi] = useState(ls.get('dataApi', []));
 const [filterName, setFilterName] = useState("");
 const [filterHouse, setFilterHouse] = useState("Gryffindor");
 
+
 useEffect(() => {
   api().then((dataFromApi) => {
     ls.set("dataApi", dataFromApi);
@@ -37,7 +38,8 @@ const {pathname} = useLocation();
   const userId = dataPath !== null ? dataPath.params.userId : null;
   const userFound = dataApi.find(user => {
     return user.id === parseInt(userId)
-  })
+  });
+
 
   return (<>
         <div className="App">
@@ -70,7 +72,6 @@ const {pathname} = useLocation();
         filterName={filterName}
         filterHouse={filterHouse}
         />
-        {/* <CharacterCard element={element}/> */}
         </ul>
         </div>
         </>}/>

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import defaultPhoto from '../images/esplaceholder.png';
+import PropTypes from 'prop-types';
 
 const CharacterDetail = (props, index) => {
     return (<>
@@ -21,6 +22,14 @@ const CharacterDetail = (props, index) => {
     </div>
    
     </>)
+}
+
+CharacterDetail.defaultProps = {
+    element: {}
+  };
+
+CharacterDetail.propTypes = {
+    element: PropTypes.object.isRequired,
 }
 
 export default CharacterDetail;

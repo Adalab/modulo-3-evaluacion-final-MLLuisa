@@ -1,12 +1,8 @@
-// import defaultPhoto from '../images/esplaceholder.png';
 import '../styles/App.scss';
 import CharacterCard from './CharacterCard';
+import PropTypes from 'prop-types';
 
 const CharacterList = (props) => {
-
-        // if(props.dataApi.image === "") {
-        //   return {defaultPhoto};
-        // }
         return props.dataApi
         .filter((element) => {
           if (props.filterName !== ''){
@@ -24,5 +20,17 @@ const CharacterList = (props) => {
             return (<CharacterCard element={element} key={index} />)
         })
       }
+
+      CharacterList.defaultProps = {
+        dataApi: [],
+        filterName: "",
+        filterHouse: ""
+      };
+      
+      CharacterList.propTypes = {
+        dataApi: PropTypes.array.isRequired,
+        filterName: PropTypes.string.isRequired,
+        filterHouse: PropTypes.string.isRequired
+      } 
 
 export default CharacterList;
