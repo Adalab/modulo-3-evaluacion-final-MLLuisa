@@ -1,13 +1,14 @@
 const FilterByName = (props) => {
 
 const handleFilterByName = (ev) => {
-    ev.preventDefault();
     props.handleFilterByName(ev.target.value.toLowerCase());
 }
 
     return (<form>
-        <label>Filtrar por nombre: </label>
-        <input type='text' 
+        <label className="labelName">Filtrar por nombre: </label>
+        <input type='text'
+        className="inputName"
+        placeholder="Ex. Hermione Granger" 
         onChange={handleFilterByName}
         value={props.filterName}
         />

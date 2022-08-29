@@ -40,14 +40,21 @@ const {pathname} = useLocation();
   return (<>
         <div className="App">
         <header>
-          <img src={titlePhoto} alt='harry-potter-title'></img>
+          <figure className='pageTitle'>
+            <img src={titlePhoto} alt='harry-potter-title'
+            className='headerImage'>
+            </img>
+            <p className='phraseHermione'>It's leviOsa, not levioSA!</p>
+          </figure>
+          
+          
         </header>
     
       <main>
         <Routes>
           <Route path='/' element={<>
           <div className='divSearch'>
-          <Filters
+          <Filters className='filters'
         handleFilterByName={handleFilterByName} 
         filterName={filterName}
         handleFilterByHouse={handleFilterByHouse}

@@ -1,26 +1,83 @@
+@import '../styles//core/variables.scss';
+
 * {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+body {
+    background-color: grey;
+}
+
+.pageTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.phraseHermione {
+    font-size: 22px;
+}
+
+.headerImage {
+    width: 400px;
+    height: 150px;
+}
+
 .charactersPhoto {
-    width: 150px;
-    height:  200px;
+    width: 180px;
+    height: 220px;
+}
+
+.charactersPhotoDetail {
+    width: 180px;
 }
 
 .characterList {
-    border: 5px solid red;
     margin-bottom: 10px;
-    padding: 5px;
-    width: 150px;
     list-style: none;
     text-decoration: none;
     text-align: center;
     color: black;
+    font-size: 20px;
 }
 
-.divSearch {
-    display:flex;
-    gap: 5px;
+.wrapperDetail {
+    list-style: none;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    padding-bottom: 2px;
+    margin: 20px 20px;
+    border: 5px dotted #d78f37;
+}
+
+.divSearch{
+    margin: 5px;
+}
+
+.labelName, .labelHouse {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.selectHome, .inputName {
+    border: 4px solid;
+    border-color: #d78f37;
+    height: 22px;
+    width: 250px;
+    font-size: 20px;
+    background-color: grey;
+}
+
+::placeholder {
+    color: black;
+}
+
+.selectHome {
+    margin-top: 5px;
+    height: 32px;
+    width: 292px;
 }
 
 .listWrapper {
@@ -35,7 +92,24 @@
 
 .wrapperCard {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #d78f37;
+}
+
+.linkHome {
+    font-size: 22px;
+    color: black;
+    text-decoration: none;
+    padding: 2px 20px;
+    border-radius: 9px;
+    background-color: #d78f37;
+}
+
+.liDetail {
+    border: 2px solid;
+    width: auto;
+    margin: 0px 480px;
+    font-size: 26px;
 }

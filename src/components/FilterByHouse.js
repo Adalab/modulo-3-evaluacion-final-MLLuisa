@@ -7,10 +7,10 @@ const handleFilterHouse = (ev) => {
 
     return (<>
     <label
-        className="form__label display-block"
+        className="labelHouse"
         htmlFor="houses">Filtrar por casa: </label>
     <select
-        className="form__input-text"
+        className="selectHome"
         name={props.filterHouse}
         id={props.filterHouse}
         onChange={handleFilterHouse}
