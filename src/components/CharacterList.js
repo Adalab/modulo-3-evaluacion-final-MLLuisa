@@ -1,18 +1,17 @@
-import defaultPhoto from '../images/esplaceholder.png';
+// import defaultPhoto from '../images/esplaceholder.png';
 import '../styles/App.scss';
 import CharacterCard from './CharacterCard';
 
-const CharacterList = (props, index) => {
+const CharacterList = (props) => {
 
-        if(props.dataApi.image === "") {
-          return {defaultPhoto};
-        }
+        // if(props.dataApi.image === "") {
+        //   return {defaultPhoto};
+        // }
         return props.dataApi
         .filter((element) => {
           if (props.filterName !== ''){
-              return (element.name.toLowerCase().includes(props.filterName.toLocaleLowerCase()));
+              return element.name.toLowerCase().includes(props.filterName.toLowerCase())
           } return true;
-          
       })
         .filter((element) => {
           if(props.filterHouse === 'Gryffindor') {

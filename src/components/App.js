@@ -3,9 +3,10 @@ import api from '../services/api';
 import titlePhoto from '../images/Harry-film-logo.png';
 import '../styles/App.scss';
 import { useState, useEffect } from 'react';
+import {Route, Routes, matchPath, useLocation} from 'react-router-dom';
 import Filters from './Filters';
 import CharacterList from './CharacterList';
-import CharacterCard from './CharacterCard';
+import CharacterDetail from './CharacterDetail';
 
 function App() {
 
@@ -28,11 +29,25 @@ const handleFilterByHouse = (value) => {
   setFilterHouse(value);
 }
 
-  return (
-    <div className="App">
-      <img src={titlePhoto} alt='harry-potter-title'></img>
-      <div className='divSearch'>
-        <Filters
+// id found del click
+const {pathname} = useLocation();
+  const dataPath = matchPath("/CharacterDetail/:userId", pathname)
+  const userId = dataPath !== null ? dataPath.params.userId : null;
+  const userFound = dataApi.find(user => {
+    return user.id === parseInt(userId)
+  })
+
+  return (<>
+        <div className="App">
+        <header>
+          <img src={titlePhoto} alt='harry-potter-title'></img>
+        </header>
+    
+      <main>
+        <Routes>
+          <Route path='/' element={<>
+          <div className='divSearch'>
+          <Filters
         handleFilterByName={handleFilterByName} 
         filterName={filterName}
         handleFilterByHouse={handleFilterByHouse}
@@ -45,12 +60,23 @@ const handleFilterByHouse = (value) => {
         dataApi={dataApi}
         filterName={filterName}
         filterHouse={filterHouse}
-        CharacterCard={CharacterCard}
         />
+        {/* <CharacterCard element={element}/> */}
         </ul>
-      </div>
+        </div>
+        </>}/>
+        <Route path={"/CharacterDetail/:userId"} 
+        element={<CharacterDetail 
+        element={userFound}/>}
+        />
+        </Routes>
+        
+      
+      </main>
+      
       
     </div>
+    </>
   );
 }
 
