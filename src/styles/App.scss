@@ -52,7 +52,7 @@ body {
     padding-bottom: 2px;
     margin: 20px 20px;
     border: 5px dotted #d78f37;
-    @media all and (min-width: 460px) {
+    @media all and (min-width: 400px) {
         text-align: left;
         border: none;
     }
@@ -128,7 +128,7 @@ body {
     padding: 2px 20px;
     border-radius: 9px;
     background-color: #d78f37;
-    @media all and (min-width: 460px) {
+    @media all and (min-width: 400px) {
         margin-left: 20px;
     }
     @media all and (min-width: 768px) {
@@ -142,9 +142,9 @@ body {
 .liDetail {
     border: 2px solid;
     width: auto;
-    margin: 0px 460px;
+    margin: 0px 400px;
     font-size: 26px;
-    @media all and (min-width: 460px) {
+    @media all and (min-width: 400px) {
         width: 0;
         margin: 0;
         border: none;
