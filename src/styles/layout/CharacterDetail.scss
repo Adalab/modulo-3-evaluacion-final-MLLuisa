@@ -1,0 +1,61 @@
+.linkHome {
+    font-size: 22px;
+    color: black;
+    text-decoration: none;
+    padding: 2px 20px;
+    border-radius: 9px;
+    background-color: #d78f37;
+    @media all and (min-width: 400px) {
+        margin-left: 20px;
+    }
+    @media all and (min-width: 768px) {
+        margin-left: 300px;
+    }
+    @media all and (min-width: 992px) {
+        margin-left: 20px;
+    }
+}
+
+.wrapperDetail {
+    list-style: none;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    padding-bottom: 2px;
+    margin: 20px 20px;
+    border: 5px dotted #d78f37;
+    @media all and (min-width: 400px) {
+        text-align: left;
+        border: none;
+    }
+}
+
+.liDetail {
+    border: 2px solid;
+    width: auto;
+    margin: 0px 400px;
+    font-size: 26px;
+    @media all and (min-width: 400px) {
+        width: 0;
+        margin: 0;
+        border: none;
+        font-size: 18px;
+        white-space: nowrap
+    }
+    @media all and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+    @media all and (min-width: 992px) {
+        border: 2px solid;
+        font-size: 26px;
+    }
+}
+
+.charactersPhotoDetail {
+    width: 190px;
+    height: 280px;
+}

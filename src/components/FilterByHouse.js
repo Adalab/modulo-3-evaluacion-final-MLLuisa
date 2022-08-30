@@ -18,7 +18,7 @@ const handleFilterHouse = (ev) => {
         id={props.filterHouse}
         onChange={handleFilterHouse}
         value={props.filterHouse}>
-        <option className="optionHouse" value="Gryffindor" selected>Gryffindor</option>
+        <option value="Gryffindor" selected>Gryffindor</option>
         <option value="Hufflepuff">Hufflepuff</option>
         <option value="Ravenclaw">Ravenclaw</option>
         <option value="Slytherin">Slytherin</option>

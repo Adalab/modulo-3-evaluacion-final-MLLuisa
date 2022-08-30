@@ -8,6 +8,7 @@ import Filters from './Filters';
 import CharacterList from './CharacterList';
 import CharacterDetail from './CharacterDetail';
 import ls from '../services/localStorage';
+import Footer from './Footer';
 
 function App() {
 
@@ -84,7 +85,9 @@ const {pathname} = useLocation();
       
       </main>
       
-      
+      <footer>
+        <Footer />
+      </footer>
     </div>
     </>
   );

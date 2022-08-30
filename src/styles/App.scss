@@ -1,3 +1,9 @@
+@import '../styles/layout/Footer.scss';
+@import '../styles/layout/CharacterCard.scss';
+@import '../styles/layout/CharacterDetail.scss';
+@import '../styles/layout/FilterByHouse.scss';
+@import '../styles/layout/FilterByName.scss';
+
 
 * {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -24,143 +30,10 @@ body {
     height: 150px;
 }
 
-.charactersPhoto {
-    width: 190px;
-    height: 260px;
-}
-
-.charactersPhotoDetail {
-    width: 190px;
-    height: 280px;
-}
-
-.characterList {
-    margin-bottom: 10px;
-    list-style: none;
-    text-decoration: none;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.wrapperDetail {
-    list-style: none;
-    text-align: center;
-    color: black;
-    font-size: 20px;
-    padding-bottom: 2px;
-    margin: 20px 20px;
-    border: 5px dotted #d78f37;
-    @media all and (min-width: 400px) {
-        text-align: left;
-        border: none;
-    }
-}
-
-.divSearch{
-    margin: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.labelName, .labelHouse {
-    font-size: 26px;
-    font-weight: bold;
-    color: white;
-}
-
-.selectHome, .inputName {
-    border: 4px solid;
-    border-color: #d78f37;
-    height: 22px;
-    width: 250px;
-    font-size: 20px;
-    background-color: grey;
-}
-
-.formName, .formHouse {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-::placeholder {
-    color: black;
-    opacity: 0.6;
-    color: white;
-    font-weight: bold;
-}
-
-.selectHome {
-    margin-top: 5px;
-    height: 32px;
-    width: 292px;
-    color: white;
-    font-weight: bold;
-}
-
 .listWrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-}
-
-.linkCard {
-    text-decoration: none;
-}
-
-.wrapperCard {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #d78f37;
-}
-
-.linkHome {
-    font-size: 22px;
-    color: black;
-    text-decoration: none;
-    padding: 2px 20px;
-    border-radius: 9px;
-    background-color: #d78f37;
-    @media all and (min-width: 400px) {
-        margin-left: 20px;
-    }
-    @media all and (min-width: 768px) {
-        margin-left: 300px;
-    }
-    @media all and (min-width: 992px) {
-        margin-left: 20px;
-    }
-}
-
-.liDetail {
-    border: 2px solid;
-    width: auto;
-    margin: 0px 400px;
-    font-size: 26px;
-    @media all and (min-width: 400px) {
-        width: 0;
-        margin: 0;
-        border: none;
-        font-size: 18px;
-        white-space: nowrap
-    }
-    @media all and (min-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: auto;
-    }
-    @media all and (min-width: 992px) {
-        border: 2px solid;
-    }
 }
 
 .characterNotFound {
@@ -168,3 +41,4 @@ body {
     color: white;
     font-family: 'Dancing Script', cursive;
 }
+
