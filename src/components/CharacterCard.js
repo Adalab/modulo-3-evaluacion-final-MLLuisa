@@ -15,7 +15,6 @@ const CharacterCard = (props, index) => {
               className="charactersPhoto"></img>
         <p>{props.element.name}</p>
         <span>{props.element.species}</span>
-        <p>{props.element.house}</p>
         </li>
         </Link>
         </div>)
