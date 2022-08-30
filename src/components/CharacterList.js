@@ -3,11 +3,13 @@ import CharacterCard from './CharacterCard';
 import PropTypes from 'prop-types';
 
 const CharacterList = (props) => {
-        return props.dataApi
+
+      const dataApiFiltered = props.dataApi
         .filter((element) => {
-          if (props.filterName !== ''){
-              return element.name.toLowerCase().includes(props.filterName.toLowerCase())
-          } return true;
+          if (props.filterName){
+              return element.name.toLowerCase().includes(props.filterName.toLowerCase());
+          } 
+          return true;
       })
         .filter((element) => {
           if(props.filterHouse === 'Gryffindor') {
@@ -15,16 +17,20 @@ const CharacterList = (props) => {
           } else {
             return props.filterHouse.includes(element.house);
           }
-        })
-        .map((element, index) => {
-            return (<CharacterCard element={element} key={index} />)
-        })
+        });
+
+        if(dataApiFiltered.length === 0) {
+          return <p className='characterNotFound'>{`No se ha encontrado ningun personaje con la letra "${props.filterName}".`}</p>
+        } else {
+          return dataApiFiltered.map((element, index) => <CharacterCard element={element} key={index} />
+        )
+        }
       }
 
       CharacterList.defaultProps = {
         dataApi: [],
         filterName: "",
-        filterHouse: ""
+        filterHouse: "Gryffindor"
       };
       
       CharacterList.propTypes = {

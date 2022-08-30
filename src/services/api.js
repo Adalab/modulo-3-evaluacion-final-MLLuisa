@@ -10,7 +10,7 @@ const api = () => {
         image: user.image,
         name: user.name || 'https://via.placeholder.com/150',
         species: user.species,
-        status: user.alive === true ? 'alive' : 'dead',
+        status: user.alive === true ? 'alive - ♥' : 'dead - ☠',
         gender: user.gender,
         house: user.house || "none"
       }
