@@ -17,7 +17,7 @@ const CharacterList = (props) => {
           } else {
             return props.filterHouse.includes(element.house);
           }
-        });
+        })
 
         if(dataApiFiltered.length === 0) {
           return <p className='characterNotFound'>{`No se ha encontrado ningun personaje con la letra "${props.filterName}".`}</p>
