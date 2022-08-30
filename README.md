@@ -1,4 +1,4 @@
-# Harry potter list
+# Harry Potter list
 
 Here's my final exercise of module 3 (React) Adalab Bootcamp made with React - React router - Sass 👩‍💻
 
