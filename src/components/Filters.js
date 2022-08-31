@@ -1,5 +1,6 @@
 import FilterByHouse from './FilterByHouse';
 import FilterByName from './FilterByName';
+import FilterByGender from './FilterByGender';
 
 const Filters = (props) => {
     return (<>
@@ -11,6 +12,9 @@ const Filters = (props) => {
     filterHouse={props.filterHouse}
     handleFilterByHouse={props.handleFilterByHouse}
     />
+    <FilterByGender 
+    handleFilterByGender={props.handleFilterByGender}
+    filterGender={props.filterGender}/>
     </>)
 }
 
