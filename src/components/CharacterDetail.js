@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import defaultPhoto from '../images/esplaceholder.png';
 import PropTypes from 'prop-types';
+import '../styles/layout/CharacterDetail.scss'
 
 const CharacterDetail = (props, index) => {
     return (<>
