@@ -11,7 +11,7 @@ const FilterByGender = (props) => {
         className="selectGender"
                 onClick={handleFilterByGender}
                 value={props.FilterByGender}>
-            <option value='all'>all</option>
+            <option value='all'>All</option>
             <option value='male'>Male</option>
             <option value='female'>Female</option>
         </select>

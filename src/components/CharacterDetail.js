@@ -5,7 +5,7 @@ import '../styles/layout/CharacterDetail.scss'
 
 const CharacterDetail = (props, index) => {
     return (<>
-    <Link to='/' className='linkHome'>Volver atras</Link>
+    <Link to='/' className='linkHome'>Home</Link>
     <div className='wrapperDetail'> 
     
     <li key={index} className='liDetail'>

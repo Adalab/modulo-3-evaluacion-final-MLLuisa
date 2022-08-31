@@ -7,7 +7,7 @@ const CharacterCard = (props, index) => {
     <Link to={`/CharacterDetail/${props.element.id}`}
             className='linkCard'>
         <li key={index} 
-        className='characterList'>
+        className='characterCard'>
         <img 
               src={props.element.image || defaultPhoto}
               alt={`Click here to see more info of ${props.element.name}`}

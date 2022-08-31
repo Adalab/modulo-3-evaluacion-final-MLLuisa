@@ -11,7 +11,7 @@ const handleFilterHouse = (ev) => {
     <form className="formHouse">
         <label
         className="labelHouse"
-        htmlFor="houses">Selecciona la casa: </label>
+        htmlFor="houses">Search for house: </label>
     <select
         className="selectHome"
         name={props.filterHouse}

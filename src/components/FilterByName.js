@@ -7,7 +7,7 @@ const handleFilterByName = (ev) => {
 }
 
     return (<form className="formName">
-        <label className="labelName">Buscar por personaje: </label>
+        <label className="labelName">Search for characters:</label>
         <input type='text'
         className="inputName"
         placeholder="Ex. Hermione Granger" 

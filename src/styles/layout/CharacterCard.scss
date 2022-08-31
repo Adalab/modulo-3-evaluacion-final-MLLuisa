@@ -10,7 +10,7 @@
     text-decoration: none;
 }
 
-.characterList {
+.characterCard {
     margin-bottom: 10px;
     list-style: none;
     text-decoration: none;
@@ -18,6 +18,17 @@
     color: white;
     font-size: 20px;
     font-weight: bold;
+}
+
+.characterCard:hover {
+    box-shadow: inset 100px 0 0 0 #54b3d6;
+    color: white;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: black;
+    opacity: 0.8;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: all .4s ease-in-out;;
 }
 
 .charactersPhoto {
