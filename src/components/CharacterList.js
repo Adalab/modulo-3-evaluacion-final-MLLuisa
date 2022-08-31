@@ -1,6 +1,6 @@
 import '../styles/App.scss';
 import CharacterCard from './CharacterCard';
-import PropTypes from 'prop-types';
+import {PropTypes} from 'prop-types';
 
 const CharacterList = (props) => {
 
@@ -16,6 +16,13 @@ const CharacterList = (props) => {
             return props.filterHouse.includes(element.house);
           } else {
             return props.filterHouse.includes(element.house);
+          }
+        })
+        .filter((element) => {
+          if(props.filterGender === "all") {
+            return true
+          } else {
+            return props.filterGender === element.gender;
           }
         })
 

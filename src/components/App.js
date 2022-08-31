@@ -15,6 +15,7 @@ function App() {
 const [dataApi, setDataApi] = useState(ls.get('dataApi', []));
 const [filterName, setFilterName] = useState("");
 const [filterHouse, setFilterHouse] = useState("Gryffindor");
+const [filterGender, setFilterGender] = useState("all");
 
 
 useEffect(() => {
@@ -33,6 +34,9 @@ const handleFilterByHouse = (value) => {
   setFilterHouse(value);
 }
 
+const handleFilterByGender = (value) => {
+  setFilterGender(value)
+}
 // id found del click
 const {pathname} = useLocation();
   const dataPath = matchPath("/CharacterDetail/:userId", pathname)
@@ -64,6 +68,8 @@ const {pathname} = useLocation();
         filterName={filterName}
         handleFilterByHouse={handleFilterByHouse}
         filterHouse={filterHouse}
+        handleFilterByGender={handleFilterByGender}
+        filterGender={filterGender}
         />
       </div>
       <div className='characterWrapper'>
@@ -72,6 +78,7 @@ const {pathname} = useLocation();
         dataApi={dataApi}
         filterName={filterName}
         filterHouse={filterHouse}
+        filterGender={filterGender}
         />
         </ul>
         </div>
