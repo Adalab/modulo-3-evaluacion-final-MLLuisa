@@ -1,6 +1,6 @@
 
 const api = () => {
-  return fetch("https://hp-api.herokuapp.com/api/characters")
+  return fetch("https://cors-anywhere.herokuapp.com/http://api/characters")
   .then(response => response.json())
   .then(data => {
     // limpiar los datos
