@@ -4,7 +4,7 @@ Here's my final exercise of module 3 (React) Adalab Bootcamp made with React - R
 
 If you want to check, you can clone this repo with the command:
 
-1. `git clone` "(http://beta.adalab.es/modulo-3-evaluacion-final-MLLuisa/)";
+1. `git clone` "(https://mlluisa.github.io/modulo-3-evaluacion-final-MLLuisa/)";
 2. `npm i` to install all the dependencies;
 3. `npm start` to start the web page;
 
