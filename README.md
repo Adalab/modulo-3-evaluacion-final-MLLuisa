@@ -4,7 +4,7 @@ Here's my final exercise of module 3 (React) Adalab Bootcamp made with React - R
 
 If you want to check, you can clone this repo with the command:
 
-1. `git clone` "(https://mlluisa-harry-potter-project.netlify.app/)";
+1. `git clone` "(https://github.com/MLLuisa/modulo-3-evaluacion-final-MLLuisa.git)";
 2. `npm i` to install all the dependencies;
 3. `npm start` to start the web page;
 
@@ -27,4 +27,4 @@ You can also, after filter, check more info about each character by clicking on 
 
 And this is my page, Hope you like it! 🥰
 
-To visit the web, click 👉 [here](http://beta.adalab.es/modulo-3-evaluacion-final-MLLuisa/)
+To visit the web, click 👉 [here](https://mlluisa-harry-potter-project.netlify.app/)
