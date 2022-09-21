@@ -6,7 +6,7 @@ const FilterByGender = (props) => {
     }
 
     return (<form>
-        <label className='labelGender'>Gender: </label>
+        <label className='labelGender'>Search for gender: </label>
         <select type='text'
         className="selectGender"
                 onClick={handleFilterByGender}
