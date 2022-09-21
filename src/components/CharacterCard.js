@@ -10,8 +10,8 @@ const CharacterCard = (props, index) => {
         className='characterCard'>
         <img 
               src={props.element.image || defaultPhoto}
-              alt={`Click here to see more info of ${props.element.name}`}
-              title={`More info here of ${props.element.name}`}
+              alt={`Click for more info of ${props.element.name}`}
+              title={`Click for more info`}
               className="charactersPhoto"></img>
         <p>{props.element.name}</p>
         <span>{props.element.species}</span>
